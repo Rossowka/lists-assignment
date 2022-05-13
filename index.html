@@ -6,91 +6,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/8d1825da9a.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Lists</title>
 </head>
-<body>
-    <div>
-        <ul>
-            <li><a href="https://www.tasteatlas.com/coffee"><img src="./images/food/coffee.png" alt="">Coffee</a></li>
-            <li><a href="https://www.tasteatlas.com/guacamole"><img src="./images/food/guacamole.png" alt="">Guacamole</a></li>
-            <li><a href="https://www.tasteatlas.com/beef"><img src="./images/food/beef.png" alt="">Beef</a></li>
-            <li><a href="https://www.tasteatlas.com/greek-yogurt"><img src="./images/food/yogurt.png" alt="">Greek Yogurt</a></li>
-            <li><a href="https://www.tasteatlas.com/eggs"><img src="./images/food/egg.png" alt="">Eggs</a></li>
-            <li><a href="https://www.tasteatlas.com/garlic"><img src="./images/food/garlic.png" alt="">Garlic</a></li>
-            <li><a href="https://www.tasteatlas.com/red-wine"><img src="./images/food/wine.png" alt="">Wine</a></li>
-            <li><a href="https://www.tasteatlas.com/cheddar"><img src="./images/food/cheddar.png" alt="">Cheddar</a></li>
-        </ul>
-        <h2>My favourite foods</h2>
+<body class="flex justify-center items-center">
+
+    <div class="container text-center w-max">
+        
+        <div class="container bg-gray-100 rounded-3xl p-3.5 shadow-sm">
+            <ul class="flex gap-3.5 text-sm flex-wrap justify-around items-center">
+                <li class="bg-gray-50 rounded-3xl p-3.5 shadow-sm "><a href="https://www.tasteatlas.com/coffee"><img src="./images/food/coffee.png" alt="" class="flex-initial pb-3.5 w-28">Coffee</a></li>
+                <li class="bg-gray-50 rounded-3xl p-3.5 shadow-sm"><a href="https://www.tasteatlas.com/guacamole"><img src="./images/food/avocado.png" alt="" class="flex-initial pb-3.5  w-28">Avocado</a></li>
+                <li class="bg-gray-50 rounded-3xl p-3.5 shadow-sm"><a href="https://www.tasteatlas.com/greek-yogurt"><img src="./images/food/yogurt.png" alt="" class="flex-initial pb-3.5 w-28">Greek Yogurt</a></li>
+                <li class="bg-gray-50 rounded-3xl p-3.5 shadow-sm"><a href="https://www.tasteatlas.com/red-wine"><img src="./images/food/wine.png" alt="" class="flex-initial pb-3.5 w-28">Wine</a></li>
+                <li class="bg-gray-50 rounded-3xl p-3.5 shadow-sm"><a href="https://www.tasteatlas.com/cheddar"><img src="./images/food/cheese.png" alt="" class="flex-initial pb-3.5 w-28">Cheddar</a></li>
+            </ul>
+            <h2 class="mt-3.5">Favourite foods</h2>
+        </div>
+
+        <div class="container bg-gray-100 rounded-3xl p-3.5 mt-3.5 shadow-sm">
+            <ol class="flex justify-center gap-3.5 text-sm flex-wrap">
+                <li class="w-1/5"><input type="checkbox" name="" id="">&nbsp; &#129322; &nbsp;Have fun</li>
+                <li class="w-1/5"><input type="checkbox" name="" id="">&nbsp; &#128170; &nbsp;Work hard</li>
+                <li class="w-1/5"><input type="checkbox" name="" id="">&nbsp; &#128588; &nbsp;Make history</li>
+            </ol>
+            <h2 class="mt-3.5">To-do's</h2>
+        </div>
+
+        <div class="container bg-gray-100 rounded-3xl p-3.5 mt-3.5 shadow-sm">
+            <ol class="flex justify-between gap-3.5">
+                <li class="w-1/5"><i class="fa-solid fa-earth-europe"></i> Europe
+                    <ul class="mt-3.5 text-left list-disc list-inside text-sm bg-gray-50 rounded-3xl p-3.5 shadow-sm">
+                        <li>Georgia on Horseback</li>
+                        <li>Iceland's Hot Springs</li>
+                        <li>Peaks of the Balkans</li>
+                    </ul>
+                </li>
+                <li class="w-1/5"><i class="fa-solid fa-earth-asia"></i> Asia
+                    <ul class="mt-3.5 text-left list-disc list-inside text-sm bg-gray-50 rounded-3xl p-3.5 shadow-sm">
+                        <li>Surf in Sri Lanka</li>
+                        <li>Find salt in Himalayas</li>
+                        <li>Try street food in Tokyo</li>
+                    </ul>
+                </li>
+                <li class="w-1/5"><i class="fa-solid fa-earth-oceania"></i> Oceania
+                    <ul class="mt-3.5 text-left list-disc list-inside text-sm bg-gray-50 rounded-3xl p-3.5 shadow-sm">
+                        <li>Learn the Haka in New Zealand</li>
+                        <li>Dive at Great Bareer Reef</li>
+                        <li>Find inner peace on Bali</li>
+                    </ul>
+                </li>
+                <li class="w-1/5"><i class="fa-solid fa-earth-americas"></i> Americas
+                    <ul class="mt-3.5 text-left list-disc list-inside text-sm bg-gray-50 rounded-3xl p-3.5 shadow-sm">
+                        <li>Break a Mustang in USA</li>
+                        <li>Race in Bolivia</li>
+                        <li>Experience music in New Orleans</li>
+                    </ul>
+                </li>
+                <li class="w-1/5"><i class="fa-solid fa-earth-africa"></i> Africa
+                    <ul class="mt-3.5 text-left list-disc list-inside text-sm bg-gray-50 rounded-3xl p-3.5 shadow-sm">
+                        <li>Sandboard in the desert</li>
+                        <li>Big Five Safari</li>
+                        <li>Witness the Great Migration</li>
+                    </ul>
+                </li>
+            </ol>
+            <h2 class="mt-3.5">Places to experience</h2>
+        </div>
+
+        <div class="container bg-gray-100 rounded-3xl p-3.5 mt-3.5 shadow-sm">
+            <ul>
+                <li>
+                    <ol class="flex gap-3.5 justify-center flex-wrap">
+                        <li><a href="https://www.imdb.com/title/tt0499549/?ref_=tt_mv_close"><img src="./images/movies/Avatar_(2009_film)_poster.jpeg" alt="" class="rounded-lg flex-initial"></a></li>
+                        <li><a href="https://www.imdb.com/title/tt3890160/?ref_=fn_al_tt_1"><img src="./images/movies/Baby_Driver_poster.jpeg" alt="" class="rounded-lg flex-initial"></a></li>
+                        <li><a href="https://www.imdb.com/title/tt1485796/?ref_=fn_al_tt_1"><img src="./images/movies/The_Greatest_Showman_poster.png" alt="" class="rounded-lg flex-initial"></a></li>
+                        <li><a href="https://www.imdb.com/title/tt0816692/?ref_=fn_al_tt_1"><img src="./images/movies/Interstellar_film_poster.jpeg" alt="" class="rounded-lg flex-initial"></a></li>
+                        <li><a href="https://www.imdb.com/title/tt1853728/?ref_=nv_sr_srsg_0"><img src="./images/movies/Django_Unchained_Poster.jpeg" alt="" class="rounded-lg flex-initial"></a></li>
+                    </ol>
+                    <h2 class="mt-3.5">Top 5 Movies</h2>
+                </li>
+                <li class="mt-3.5">
+                    <ol class="flex gap-3.5 justify-center flex-wrap">
+                        <li><a href="https://www.igdb.com/games/horizon-zero-dawn"><img src="./images/games/horizon.png" alt="" class="rounded-lg flex-initial"></a></li>
+                        <li><a href="https://www.igdb.com/games/uncharted-the-nathan-drake-collection"><img src="./images/games/uncharted.png" alt="" class="rounded-lg flex-initial"></a></li>
+                        <li><a href="https://www.igdb.com/games/trackmania-turbo"><img src="./images/games/trackmania.png" alt="" class="rounded-lg flex-initial"></a></li>
+                        <li><a href="https://www.igdb.com/games/red-dead-redemption"><img src="./images/games/rdr.png" alt="" class="rounded-lg flex-initial"></a></li>
+                        <li><a href="https://www.igdb.com/games/final-fantasy-x"><img src="./images/games/ffx.png" alt=""class="rounded-lg flex-initial"></a></li>
+                    </ol>
+                    <h2 class="mt-3.5">Top 5 Video Games</h2> 
+                </li>
+            </ul>
+        </div>
     </div>
-    <div>
-        <ol>
-            <li><input type="checkbox" name="" id="">&#129322; Have fun</li>
-            <li><input type="checkbox" name="" id="">&#128170; Work hard</li>
-            <li><input type="checkbox" name="" id="">&#128588; Make history</li>
-        </ol>
-        <h2>To-do's</h2>
-    </div>
-    <div>
-        <ol>
-            <li><i class="fa-solid fa-earth-europe"></i>Europe
-                <ul>
-                    <li><i class="fa-solid fa-horse"></i>Georgia on Horseback</li>
-                    <li><i class="fa-solid fa-hot-tub-person"></i>Iceland's Hot Springs</li>
-                    <li><i class="fa-solid fa-person-hiking"></i>Peaks of the Balkans</li>
-                </ul>
-            </li>
-            <li><i class="fa-solid fa-earth-asia"></i>Asia
-                <ul>
-                    <li><i class="fa-solid fa-person-swimming"></i>Surf in Sri Lanka</li>
-                    <li><i class="fa-solid fa-mountain"></i>Find salt in Himalayas</li>
-                    <li><i class="fa-solid fa-drumstick-bite"></i>Try street food in Tokyo</li>
-                </ul>
-            </li>
-            <li><i class="fa-solid fa-earth-oceania"></i>Oceania
-                <ul>
-                    <li><i class="fa-solid fa-kiwi-bird"></i>Learn the Haka in New Zealand</li>
-                    <li><i class="fa-solid fa-fish"></i>Dive at Great Bareer Reef</li>
-                    <li><i class="fa-solid fa-om"></i>Find inner peace on Bali</li>
-                </ul>
-            </li>
-            <li><i class="fa-solid fa-earth-americas"></i>Americas
-                <ul>
-                    <li><i class="fa-solid fa-hat-cowboy"></i>Break a Mustang in USA</li>
-                    <li><i class="fa-solid fa-person-biking"></i>Race in Bolivia</li>
-                    <li><i class="fa-solid fa-hat-wizard"></i>Experience music in New Orleans</li>
-                </ul>
-            </li>
-            <li><i class="fa-solid fa-earth-africa"></i>Africa
-                <ul>
-                    <li><i class="fa-solid fa-person-snowboarding"></i>Sandboard in the desert</li>
-                    <li><i class="fa-solid fa-paw"></i>Big Five Safari</li>
-                    <li><i class="fa-solid fa-film"></i>Witness the Great Migration</li>
-                </ul>
-            </li>
-        </ol>
-        <h2>Places to experience</h2>
-    </div>
-    <div>
-        <ul>
-            <li>Top 5 Movies
-                <ol>
-                    <li><a href="https://www.imdb.com/title/tt0499549/?ref_=tt_mv_close"><img src="./images/movies/Avatar_(2009_film)_poster.jpeg" alt=""></a></li>
-                    <li><a href="https://www.imdb.com/title/tt3890160/?ref_=fn_al_tt_1"><img src="./images/movies/Baby_Driver_poster.jpeg" alt=""></a></li>
-                    <li><a href="https://www.imdb.com/title/tt1485796/?ref_=fn_al_tt_1"><img src="./images/movies/The_Greatest_Showman_poster.png" alt=""></a></li>
-                    <li><a href="https://www.imdb.com/title/tt0816692/?ref_=fn_al_tt_1"><img src="./images/movies/Interstellar_film_poster.jpeg" alt=""></a></li>
-                    <li><a href="https://www.imdb.com/title/tt1853728/?ref_=nv_sr_srsg_0"><img src="./images/movies/Django_Unchained_Poster.jpeg" alt=""></a></li>
-                </ol>
-            </li>
-            <li>Top 5 Video Games
-                <ol>
-                    <li><a href="https://www.igdb.com/games/horizon-zero-dawn"><img src="./images/games/horizon.png" alt=""></a></li>
-                    <li><a href="https://www.igdb.com/games/uncharted-the-nathan-drake-collection"><img src="./images/games/uncharted.png" alt=""></a></li>
-                    <li><a href="https://www.igdb.com/games/trackmania-turbo"><img src="./images/games/trackmania.png" alt=""></a></li>
-                    <li><a href="https://www.igdb.com/games/red-dead-redemption"><img src="./images/games/rdr.png" alt=""></a></li>
-                    <li><a href="https://www.igdb.com/games/final-fantasy-x"><img src="./images/games/ffx.png" alt=""></a></li>
-                </ol>
-            </li>
-        </ul>
-    </div>
+    <!-- <a href="https://www.flaticon.com/free-icons/cheese" title="food icons">Food icons created by Freepik - Flaticon</a> -->
 </body>
 </html>
